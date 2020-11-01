@@ -23,6 +23,18 @@ def division(a, b):
     d = round(c, 9)
     return d
 
+def sqr(a):
+    a = int(a)
+    c = a * a
+    return c
+
+def root(a):
+    a = int(a)
+    c = math.sqrt(a)
+    d = round(c, 8)
+    return d
+
+
 class Calculator:
     result = 0
 
@@ -43,4 +55,12 @@ class Calculator:
 
     def div(self, a, b):
         self.result = division(a, b)
+        return self.result
+    
+    def square(self, a):
+        self.result = sqr(a)
+        return self.result
+    
+    def squareroot(self, a):
+        self.result = root(a)
         return self.result
