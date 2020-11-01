@@ -1,5 +1,9 @@
 def addition(a,b):
-    return a+b
+    a = int(a)
+    b = int(b)
+    c = a + b
+    return c
+
 def subtract(a,b):
     a = int(a)
     b = int(b)
